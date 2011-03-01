@@ -1,0 +1,357 @@
+{
+   "abstract" : "Helps keep a database schema up to date",
+   "author" : [
+      "Randy Stauner <rwstauner@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.110440",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "DBIx-Schema-UpToDate",
+   "no_index" : {
+      "directory" : [
+         "corpus",
+         "examples",
+         "inc",
+         "share",
+         "t",
+         "xt"
+      ]
+   },
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Carp" : 0,
+            "perl" : "5.006"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "DBI" : 0,
+            "File::Find" : 0,
+            "File::Temp" : 0,
+            "Test::MockObject" : "1.09",
+            "Test::More" : "0.96"
+         }
+      }
+   },
+   "provides" : {
+      "DBIx::Schema::UpToDate" : {
+         "file" : "lib/DBIx/Schema/UpToDate.pm",
+         "version" : "0.005"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "mailto" : "bug-dbix-schema-uptodate at rt.cpan.org",
+         "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=DBIx-Schema-UpToDate"
+      },
+      "homepage" : "http://github.com/magnificent-tears/DBIx-Schema-UpToDate/tree",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/magnificent-tears/DBIx-Schema-UpToDate.git",
+         "web" : "http://github.com/magnificent-tears/DBIx-Schema-UpToDate/tree"
+      }
+   },
+   "version" : "0.005",
+   "x_Dist_Zilla" : {
+      "plugins" : [
+         {
+            "class" : "Dist::Zilla::Plugin::Git::NextVersion",
+            "name" : "@GopherRepellent/Git::NextVersion",
+            "version" : "1.110500"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::GatherDir",
+            "name" : "@GopherRepellent/GatherDir",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::PruneCruft",
+            "name" : "@GopherRepellent/PruneCruft",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::ManifestSkip",
+            "name" : "@GopherRepellent/ManifestSkip",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Authority",
+            "name" : "@GopherRepellent/Authority",
+            "version" : "1.004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::NextRelease",
+            "name" : "@GopherRepellent/NextRelease",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::PkgVersion",
+            "name" : "@GopherRepellent/PkgVersion",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Prepender",
+            "name" : "@GopherRepellent/Prepender",
+            "version" : "1.103470"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::PodWeaver",
+            "name" : "@GopherRepellent/PodWeaver",
+            "version" : "3.101641"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::License",
+            "name" : "@GopherRepellent/License",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Readme",
+            "name" : "@GopherRepellent/Readme",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Bugtracker",
+            "name" : "@GopherRepellent/Bugtracker",
+            "version" : "1.102670"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Repository",
+            "name" : "@GopherRepellent/Repository",
+            "version" : "0.17"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::GithubMeta",
+            "name" : "@GopherRepellent/GithubMeta",
+            "version" : "0.10"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::AutoPrereqs",
+            "name" : "@GopherRepellent/AutoPrereqs",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::MetaNoIndex",
+            "name" : "@GopherRepellent/MetaNoIndex",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::MetaProvides::Package",
+            "name" : "@GopherRepellent/MetaProvides::Package",
+            "version" : "1.12044908"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::MinimumPerl",
+            "name" : "@GopherRepellent/MinimumPerl",
+            "version" : "0.02"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::MetaConfig",
+            "name" : "@GopherRepellent/MetaConfig",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::MetaYAML",
+            "name" : "@GopherRepellent/MetaYAML",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::MetaJSON",
+            "name" : "@GopherRepellent/MetaJSON",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Prereqs",
+            "config" : {
+               "Dist::Zilla::Plugin::Prereqs" : {
+                  "phase" : "test",
+                  "type" : "requires"
+               }
+            },
+            "name" : "@GopherRepellent/TestMoreWithSubtests",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::ExtraTests",
+            "name" : "@GopherRepellent/ExtraTests",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::ExecDir",
+            "name" : "@GopherRepellent/ExecDir",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::ShareDir",
+            "name" : "@GopherRepellent/ShareDir",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::MakeMaker",
+            "name" : "@GopherRepellent/MakeMaker",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::ModuleBuild",
+            "name" : "@GopherRepellent/ModuleBuild",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::DualBuilders",
+            "name" : "@GopherRepellent/DualBuilders",
+            "version" : "1.001"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::CompileTests",
+            "name" : "@GopherRepellent/CompileTests",
+            "version" : "1.103030"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::ReportVersions::Tiny",
+            "name" : "@GopherRepellent/ReportVersions::Tiny",
+            "version" : "1.03"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::CPANChangesTests",
+            "name" : "@GopherRepellent/CPANChangesTests",
+            "version" : "1.001"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::MetaTests",
+            "name" : "@GopherRepellent/MetaTests",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::PodSyntaxTests",
+            "name" : "@GopherRepellent/PodSyntaxTests",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::PodCoverageTests",
+            "name" : "@GopherRepellent/PodCoverageTests",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::PodLinkTests",
+            "name" : "@GopherRepellent/PodLinkTests",
+            "version" : "1.004000"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::PodSpellingTests",
+            "name" : "@GopherRepellent/PodSpellingTests",
+            "version" : "1.103491"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::PortabilityTests",
+            "name" : "@GopherRepellent/PortabilityTests",
+            "version" : "1.101420"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::KwaliteeTests",
+            "name" : "@GopherRepellent/KwaliteeTests",
+            "version" : "1.101420"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::MinimumVersionTests",
+            "name" : "@GopherRepellent/MinimumVersionTests",
+            "version" : "1.101421"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Manifest",
+            "name" : "@GopherRepellent/Manifest",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::CheckChangesHasContent",
+            "name" : "@GopherRepellent/CheckChangesHasContent",
+            "version" : "0.003"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Git::Check",
+            "name" : "@GopherRepellent/Git::Check",
+            "version" : "1.110500"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::TestRelease",
+            "name" : "@GopherRepellent/TestRelease",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::ConfirmRelease",
+            "name" : "@GopherRepellent/ConfirmRelease",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::UploadToCPAN",
+            "name" : "@GopherRepellent/UploadToCPAN",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Git::Commit",
+            "name" : "@GopherRepellent/Git::Commit",
+            "version" : "1.110500"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Git::Tag",
+            "name" : "@GopherRepellent/Git::Tag",
+            "version" : "1.110500"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Git::Push",
+            "name" : "@GopherRepellent/Git::Push",
+            "version" : "1.110500"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::PruneFiles",
+            "name" : "PruneFiles",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::FinderCode",
+            "name" : ":InstallModules",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::FinderCode",
+            "name" : ":TestFiles",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::FinderCode",
+            "name" : ":ExecFiles",
+            "version" : "4.200004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::FinderCode",
+            "name" : ":ShareFiles",
+            "version" : "4.200004"
+         }
+      ],
+      "zilla" : {
+         "class" : "Dist::Zilla::Dist::Builder",
+         "config" : {
+            "is_trial" : 0
+         },
+         "version" : "4.200004"
+      }
+   },
+   "x_authority" : "cpan:RWSTAUNER"
+}
+
