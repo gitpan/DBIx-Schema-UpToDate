@@ -1,12 +1,4 @@
 #!perl
-
-BEGIN {
-  unless ($ENV{RELEASE_TESTING}) {
-    require Test::More;
-    Test::More::plan(skip_all => 'these tests are for release candidate testing');
-  }
-}
-
 #
 # This file is part of DBIx-Schema-UpToDate
 #
@@ -21,7 +13,6 @@ use warnings;
 use Test::More;
 
 foreach my $env_skip ( qw(
-  SKIP_POD_LINK_TESTS
   SKIP_POD_LINKCHECK
 ) ){
   plan skip_all => "\$ENV{$env_skip} is set, skipping"

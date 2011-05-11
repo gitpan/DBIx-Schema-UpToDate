@@ -1,12 +1,4 @@
 #!perl
-
-BEGIN {
-  unless ($ENV{RELEASE_TESTING}) {
-    require Test::More;
-    Test::More::plan(skip_all => 'these tests are for release candidate testing');
-  }
-}
-
 #
 # This file is part of DBIx-Schema-UpToDate
 #

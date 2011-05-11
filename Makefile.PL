@@ -4,7 +4,7 @@ use warnings;
 
 BEGIN { require 5.006; }
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
@@ -15,12 +15,12 @@ my %WriteMakefileArgs = (
     'DBI' => '0',
     'File::Find' => '0',
     'File::Temp' => '0',
-    'ExtUtils::MakeMaker' => '6.31',
+    'ExtUtils::MakeMaker' => '6.30',
     'Test::MockObject' => '1.09',
     'Test::More' => '0.96'
   },
   'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
+    'ExtUtils::MakeMaker' => '6.30'
   },
   'DISTNAME' => 'DBIx-Schema-UpToDate',
   'EXE_FILES' => [],
@@ -29,7 +29,7 @@ my %WriteMakefileArgs = (
   'PREREQ_PM' => {
     'Carp' => '0'
   },
-  'VERSION' => '0.005',
+  'VERSION' => '1.000',
   'test' => {
     'TESTS' => 't/*.t'
   }

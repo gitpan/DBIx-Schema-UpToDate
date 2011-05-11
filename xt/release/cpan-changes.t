@@ -1,12 +1,4 @@
 #!perl
-
-BEGIN {
-  unless ($ENV{RELEASE_TESTING}) {
-    require Test::More;
-    Test::More::plan(skip_all => 'these tests are for release candidate testing');
-  }
-}
-
 #
 # This file is part of DBIx-Schema-UpToDate
 #
@@ -17,7 +9,7 @@ BEGIN {
 #
 
 use Test::More;
-
-eval "use Test::Kwalitee";
-plan skip_all => "Test::Kwalitee required for testing kwalitee"
-  if $@;
+eval 'use Test::CPAN::Changes';
+plan skip_all => 'Test::CPAN::Changes required for this test' if $@;
+changes_ok();
+done_testing();

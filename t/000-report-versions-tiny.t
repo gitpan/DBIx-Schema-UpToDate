@@ -49,6 +49,7 @@ sub pmver {
 }
 
 eval { $v .= pmver('Carp','any version') };
+eval { $v .= pmver('DBD::Mock','any version') };
 eval { $v .= pmver('DBI','any version') };
 eval { $v .= pmver('File::Find','any version') };
 eval { $v .= pmver('File::Temp','any version') };

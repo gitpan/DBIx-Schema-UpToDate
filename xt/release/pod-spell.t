@@ -1,12 +1,4 @@
 #!perl
-
-BEGIN {
-  unless ($ENV{RELEASE_TESTING}) {
-    require Test::More;
-    Test::More::plan(skip_all => 'these tests are for release candidate testing');
-  }
-}
-
 #
 # This file is part of DBIx-Schema-UpToDate
 #
@@ -29,3 +21,5 @@ plan skip_all => "Test::Spelling required for testing POD spelling"
 
 
 all_pod_files_spelling_ok('lib');
+
+
