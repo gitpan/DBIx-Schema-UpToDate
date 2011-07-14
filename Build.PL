@@ -22,7 +22,7 @@ my %module_build_args = (
     'Randy Stauner <rwstauner@cpan.org>'
   ],
   'dist_name' => 'DBIx-Schema-UpToDate',
-  'dist_version' => '1.000',
+  'dist_version' => '1.001',
   'license' => 'perl',
   'module_name' => 'DBIx::Schema::UpToDate',
   'recommends' => {},

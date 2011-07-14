@@ -12,7 +12,7 @@ use warnings;
 
 package DBIx::Schema::UpToDate;
 BEGIN {
-  $DBIx::Schema::UpToDate::VERSION = '1.000';
+  $DBIx::Schema::UpToDate::VERSION = '1.001';
 }
 BEGIN {
   $DBIx::Schema::UpToDate::AUTHORITY = 'cpan:RWSTAUNER';
@@ -199,7 +199,7 @@ DBIx::Schema::UpToDate - Helps keep a database schema up to date
 
 =head1 VERSION
 
-version 1.000
+version 1.001
 
 =head1 SYNOPSIS
 
@@ -507,49 +507,49 @@ in addition to those websites please use your favorite search engine to discover
 
 Search CPAN
 
+The default CPAN search engine, useful to view POD in HTML format.
+
 L<http://search.cpan.org/dist/DBIx-Schema-UpToDate>
 
 =item *
 
 RT: CPAN's Bug Tracker
 
+The RT ( Request Tracker ) website is the default bug/issue tracking system for CPAN.
+
 L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=DBIx-Schema-UpToDate>
-
-=item *
-
-AnnoCPAN: Annotated CPAN documentation
-
-L<http://annocpan.org/dist/DBIx-Schema-UpToDate>
 
 =item *
 
 CPAN Ratings
 
+The CPAN Ratings is a website that allows community ratings and reviews of Perl modules.
+
 L<http://cpanratings.perl.org/d/DBIx-Schema-UpToDate>
 
 =item *
 
-CPAN Forum
+CPAN Testers
 
-L<http://cpanforum.com/dist/DBIx-Schema-UpToDate>
+The CPAN Testers is a network of smokers who run automated tests on uploaded CPAN distributions.
 
-=item *
-
-CPANTS Kwalitee
-
-L<http://cpants.perl.org/dist/overview/DBIx-Schema-UpToDate>
-
-=item *
-
-CPAN Testers Results
-
-L<http://cpantesters.org/distro/D/DBIx-Schema-UpToDate.html>
+L<http://www.cpantesters.org/distro/D/DBIx-Schema-UpToDate>
 
 =item *
 
 CPAN Testers Matrix
 
+The CPAN Testers Matrix is a website that provides a visual overview of the test results for a distribution on various Perls/platforms.
+
 L<http://matrix.cpantesters.org/?dist=DBIx-Schema-UpToDate>
+
+=item *
+
+CPAN Testers Dependencies
+
+The CPAN Testers Dependencies is a website that shows a chart of the test results of all dependencies for a distribution.
+
+L<http://deps.cpantesters.org/?module=DBIx::Schema::UpToDate>
 
 =back
 
@@ -562,9 +562,9 @@ progress on the request by the system.
 =head2 Source Code
 
 
-L<http://github.com/magnificent-tears/DBIx-Schema-UpToDate/tree>
+L<http://github.com/rwstauner/DBIx-Schema-UpToDate>
 
-  git clone git://github.com/magnificent-tears/DBIx-Schema-UpToDate.git
+  git clone http://github.com/rwstauner/DBIx-Schema-UpToDate
 
 =head1 AUTHOR
 
